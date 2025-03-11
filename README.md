@@ -10,7 +10,9 @@ u_SMC = eta*sat_S - e_dot; sat_S is the saturated sliding surface which is deter
 of the eta (control gain) to overcome uncertainties. This is where robustness comes into play. Though if eta is very strong, then states will jitter back and forth around the sliding surface; this is called: Chattering, which is the cost of SMC and robust control techniques.
 To address such chattering which is usually low-amplitude oscillations/vibrations at high frequencies; boundary layer is considered where outside the boundary layer injecting large control signals via large values of the eta is OK but inside the BL, eta and control signal are decreased to prevent
 Chattering (Jittering). 
-![image](https://github.com/user-attachments/assets/9c49c524-a7fb-4ef4-b337-40f1bae793ce)
+Below is a skematic of the SMC: 
+![image](https://github.com/user-attachments/assets/ceb97d81-430f-44da-a93f-b07b072ddb60)
+
 
 ![image](https://github.com/user-attachments/assets/518d8242-daad-46ad-8680-897d2cfb1334)
 above shows that PID could not pass! 
