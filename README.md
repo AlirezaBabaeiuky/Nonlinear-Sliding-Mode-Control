@@ -15,6 +15,6 @@ Below is a skematic of the SMC:
 
 
 ![image](https://github.com/user-attachments/assets/518d8242-daad-46ad-8680-897d2cfb1334)
-above shows that PID could not pass! 
+above shows that PID could not pass! There is a maximum peak overshoot and a steady-state error offset. This is given with very strong controller (particularly Kp proportional) which is already endangered with actuator saturation.  
 ![image](https://github.com/user-attachments/assets/5f2fc032-53ac-4f96-973e-b88fc0d54d96)
-Above shows that SM successfully passed. 
+Above shows that SMC successfully passed, meaning that with smaller control gain (eta) not only the system is robust to uncertainties, unmodeled dynamics and disturbances, but also there is no overshoot and reference tracking is without any offset. 
